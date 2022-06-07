@@ -1,0 +1,86 @@
+﻿f<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="układ.css" />
+    <link rel="stylesheet" type="text/css" href="MENU.css" />
+</head>
+<body>
+    <header style="background-color: #9cb7d4">
+        <h1>Kalkulator</h1>
+    </header>
+    <nav>
+        <center><h2 style="color:white; background-color:red"> Menu </h2></center>
+        <ul>
+            <li><a href="index.html"> Strona główna </a></li>
+            <li><a href="https://www.facebook.com/osp.ksrgchobienice/" target="_blank"> Strona facebooka </a></li>
+            <li><a href="form1.html"> Nabór - formularz</a></li>
+            <li><a href="Mapa.html" target="_self">Pobliskie jednostki osp</a></li>
+            <li><a href="Tabela.html"> Tabela - dyżurów</a></li>
+            <li><a href="Zadania osp.html"> Zadania osp</a></li>
+            <li><a href="Jednostka Chobienic.html"> Historia</a></li>
+            <li><a href="Kalkulator.html"> Objetość zbiornika</a></li>
+            <li><a href="Rysunek.html"> Rysunek-remiza</a></li>
+            <li><a href="Kontakt.html"> Autor strony</a></li>
+        </ul>
+    </nav>
+    <article>
+        
+        <h2>Objetość zbiornika prostopadłoscienego</h2>
+        <h3><i>Jednostki trzeba podawać decymetrach oraz wynik jest przeliczany na litry</i></h3>
+     
+
+        <fieldset>
+            <legend>Obliczenie zbiornika prostopadłoscienego</legend>
+            <label>Długość [dm]</label>
+            <input name="a" placeholder="Podaj liczbe w dm" autofocus required />
+            <br />
+
+            <label>szerokość [dm]</label>
+            <input name="b" placeholder="Podaj liczbe w dm" />
+            <br />
+
+            <label>wysokość [dm]</label>
+            <input name="c" placeholder="Podaj liczbe w dm" />
+            <br />
+
+         
+            <button onclick="contValues()">Oblicz</button>
+            <p>Objetość zbiornika [w litrach]: <span id="result"></span></p>
+        </fieldset>
+
+        <script type="text/javascript">
+            function contValues() {
+                var num1 = parseFloat(document.querySelector("input[name=a]").value);
+                var num2 = parseFloat(document.querySelector("input[name=b]").value);
+                var num3 = parseFloat(document.querySelector("input[name=c]").value);
+                
+
+                var result = num1 * num2 * num3
+                console.log(result);
+                document.getElementById("result").innerHTML = result;
+            }
+
+
+
+
+
+
+        </script>
+          
+      
+        
+    </article>
+    <aside>
+        <iframe src="kontrolki.html">
+        </iframe>
+    </aside>
+
+        <footer>
+            <h3>Strone wykonał:</h3>
+            <h5>Bartosz Lewandowski, 149719, EN2, L-3,bartosz.lewandowski@student.put.poznan.pl </h5>
+        </footer>
+</body>
+</html>

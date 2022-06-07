@@ -1,0 +1,200 @@
+﻿m<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Tabela</title>
+    <link rel="stylesheet" type="text/css" href="układ.css" />
+    <link rel="stylesheet" type="text/css" href="MENU.css" />
+    <style>
+
+        * {
+            font-family: Times New Roman;
+        }
+
+        table {
+           
+            margin: auto;
+            padding: 0px;
+            border-spacing: 0px;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        
+        table, td, th {
+            border: 1px solid black;
+        }
+
+       
+        tr th {
+           
+            font-family: Cambria;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 15px;
+            
+            color: black;
+            padding: 3px;
+            background-color: red;
+        }
+
+        tr td {
+            font-family: Calibri;
+            font-weight: lighter;
+            font-size: smaller;
+            color: black;
+            border-color: black;
+            padding: 10px;
+        }
+
+       
+        th {
+            width: 25px;
+        }
+
+    
+       
+
+        tbody #name {
+            color: black;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: black; background-color: #9cb7d4">Dyżury</h1>
+    </header>
+    <nav>
+        <center><h2 style="color:white; background-color:red"> Menu </h2></center>
+        <ul>
+            <li><a href="index.html"> Strona główna </a></li>
+            <li><a href="https://www.facebook.com/osp.ksrgchobienice/" target="_blank"> Strona facebooka </a></li>
+            <li><a href="form1.html"> Nabór - formularz</a></li>
+            <li><a href="Mapa.html" target="_self">Pobliskie jednostki osp</a></li>
+            <li><a href="Tabela.html"> Tabela - dyżurów</a></li>
+            <li><a href="Zadania osp.html"> Zadania osp</a></li>
+            <li><a href="Jednostka Chobienic.html"> Historia</a></li>
+            <li><a href="Kalkulator.html"> Objetość zbiornika</a></li>
+            <li><a href="Rysunek.html"> Rysunek-remiza</a></li>
+            <li><a href="Kontakt.html"> Autor strony</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div id="PoleTabeli">
+            <center><h2>Tabela dyżurów strażaków</h2></center>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Lp.</th>
+                        <th colspan="2">Strażak</th>
+                        <th rowspan="2">Tytuł</th>
+                        <th rowspan="2">Godziny</th>
+                        <th rowspan="2">Dni</th>
+                        <th rowspan="2">Numer kontaktowy</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Imię</th>
+                        <th rowspan="2">Nazwisko</th>
+                        
+
+
+</thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td id="name">Kamil</td>
+                        <td id="name">Nowak</td>
+                        <td rowspan="1">Skarbnik</td>
+                        <td rowspan="1">11:00-14:00</td>
+                        <td rospawn="1">Poniedziałek</td>
+                        <td rospawn="1">690076387</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td id="name">Maria Magdalena</td>
+                        <td id="name">Anik</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">13:00-16:00</td>
+                        <td rospawn="1">Wtorek</td>
+                        <td rospawn="1">482765409</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td id="name">Michał</td>
+                        <td id="name">Duda</td>
+                        <td rowspan="1">Prezes</td>
+                        <td rowspan="1">8:00-11:00</td>
+                        <td rospawn="1">Środa</td>
+                        <td rospawn="1">475329853</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td id="name">Antoni</td>
+                        <td id="name">Judt</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">11:00-15:00</td>
+                        <td rospawn="1">Czwartek</td>
+                        <td rospawn="1">609738842</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td id="name">Jan</td>
+                        <td id="name">Błaszczyk</td>
+                        <td rowspan="1">Ratownik</td>
+                        <td rowspan="1">9:00-12:00</td>
+                        <td rospawn="1">Czwartek</td>
+                        <td rospawn="1">454449853</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td id="name">Aleksandra</td>
+                        <td id="name">Komin</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">12:00-16:00</td>
+                        <td rospawn="1">Piątek</td>
+                        <td rospawn="1">489758229</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td id="name">Tymon</td>
+                        <td id="name">Miszon</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">16:00-20:00</td>
+                        <td rospawn="1">piątek</td>
+                        <td rospawn="1">689344092</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td id="name">Paweł</td>
+                        <td id="name">Borówka</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">11:00-15:00</td>
+                        <td rospawn="1">sobota</td>
+                        <td rospawn="1">4871102872</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td id="name">Andrzej</td>
+                        <td id="name">Skierecki</td>
+                        <td rowspan="1">Naczelnik</td>
+                        <td rowspan="1">13:00-17:00</td>
+                        <td rospawn="1">Sobota</td>
+                        <td rospawn="1">696920357</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <aside>
+        <iframe src="kontrolki.html">
+        </iframe>
+    </aside>
+    <footer>
+        <h3>Strone wykonał:</h3>
+        <h5>Bartosz Lewandowski, 149719, EN2, L-3,bartosz.lewandowski@student.put.poznan.pl </h5>
+    </footer>
+</body>
+</html>

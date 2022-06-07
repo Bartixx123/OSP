@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Nabór Formularz1</title>
+    <link rel="stylesheet" type="text/css" href="układ.css" />
+    <link rel="stylesheet" type="text/css" href="MENU.css" />
+</head>
+<body>
+    <header style="background-color: #9cb7d4">
+        <h1>Nabór do służby w Osp</h1>
+    </header>
+    <nav>
+        <center><h2 style="color:white; background-color:red"> Menu </h2></center>
+        <ul>
+            <li><a href="index.html"> Strona główna </a></li>
+            <li><a href="https://www.facebook.com/osp.ksrgchobienice/" target="_blank"> Strona facebooka </a></li>
+            <li><a href="form1.html"> Nabór - formularz</a></li>
+            <li><a href="Mapa.html" target="_self">Pobliskie jednostki osp</a></li>
+            <li><a href="Tabela.html"> Tabela - dyżurów</a></li>
+            <li><a href="Zadania osp.html"> Zadania osp</a></li>
+            <li><a href="Jednostka Chobienic.html"> Historia</a></li>
+            <li><a href="Kalkulator.html"> Objetość zbiornika</a></li>
+            <li><a href="Rysunek.html"> Rysunek-remiza</a></li>
+            <li><a href="Kontakt.html"> Autor strony</a></li>
+
+
+        </ul>
+    </nav>
+    <article>
+        <h2>Zachęcamy :)</h2>
+        <form action="mailto:bartosz.lewandowski@student.put.poznan.pl" method="post" enctype="text/plain">
+            <p>
+                <i><b>Wypełnij poniższy formularz, jeśli chcesz należeć do naszej jednostki</b></i>
+                <br />
+                Obwiązkowe pola oznaczono znakiem (<em>*</em>).
+            </p>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie">Imię<em>*</em></label>
+                <input id="imie" name="name" placeholder="Podaj imię" autofocus required />
+                <br />
+                <label for="">Nazwisko<em>*</em></label>
+                <input id="nazwisko" name="surname" placeholder="Podaj nazwisko" required />
+                <br />
+                <label for="">Nr telefonu<em>*</em></label>
+                <input id="telefon" name="phone" placeholder="(+48)xxx-xxx-xxx" />
+                <br />
+                <label for="">E-mail<em>*</em></label>
+                <input id="mail" name="email" placeholder="xxx@xxxx.xx" type="email" required />
+                <br />
+            </fieldset>
+            <fieldset>
+                <legend>Podstawowe informacje</legend>
+                <label for="birth_date">Data urodzenia<em>*</em></label>
+                <input type="date" id="birth_date" name="birth_1" plecholder="dd.mm.rrrr"><br />
+                <p>
+                    <label>Płeć</label><br />
+                    <label for="sex_1"><input type="radio" id="sex_1" name="sex" value="woman">Kobieta</label><br />
+                    <label for="sex_2"><input type="radio" id="sex_2" name="sex" value="man">Mężczyzna</label><br />
+                </p>
+                <label for="region">Na jakie stanowsiko aplikujesz?<em>*</em></label>
+                <select id="region">
+                    <option value="Naczelnik">Naczelnik</option>
+                    <option value="Kierowca">Kierowca</option>
+                    <option value="Ochotnik">Ochotnik</option>
+                    <option value="Skarbnik">Skarbnik</option>
+
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend> Doświadczenie </legend>
+                <label for="Doświadczenie"> Doświadczenie na danym stanowisku: </label><br />
+                <input type="radio" id="wiek" name="wiek" /> 0<br />
+                <input type="radio" id="wiek" name="wiek" checked /> 1-3<br />
+                <input type="radio" id="wiek" name="wiek" /> 3-5<br />
+                <input type="radio" id="wiek" name="wiek" /> 5-10<br />
+                <input type="radio" id="wiek" name="wiek" /> >10<br />
+            </fieldset>
+            <fieldset>
+                <legend> Zainteresowania </legend>
+                <label>
+                    <input type="checkbox" name="Straż pożarna" id="Straż pożarna" />Straż pożarna
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Polityka" id="Polityka" />Polityka
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Sport" id="Sport" />Sport
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Motoryzacja" id="Motoryzacja" />Motoryzacja
+                </label><br />
+                <input type="checkbox" name="Inne" id="inne" />inne
+                <br />
+            </fieldset>
+            <fieldset>
+                <legend>Jak oceniasz jednostke w Chobienicach</legend>
+                <p>
+                    10 - idealna<br />
+                    5 - może być <br />
+                    1 - okropna<br />
+                    <input type="range" id="rating" name="rate" min="1" max="11"><br />
+                    <label for="rating">1 &nbsp;2 &nbsp;3 &nbsp;4 &nbsp;5 &nbsp;6 &nbsp;7 &nbsp;8 &nbsp;9 &nbsp;10 </label>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Ośiągniecia potwierdzone dokumentem</legend>
+                <label for="plik">Prześlij swoje Osiągniecia</label>
+                <input type="file" id="plik" name="file" accept=".pdf" />
+            </fieldset>
+            <fieldset>
+                <label for="Uwagi"> Uwagi oraz pytania: </label><br />
+                <textarea cols="30" rows="10"> </textarea>
+            </fieldset>
+            <p>
+                <input type="submit" value="Wyślij formularz" />
+                <input type="reset" value="Kasuj dane w formuarzu" />
+            </p>
+        </form>
+    </article>
+    <aside><iframe src="kontrolki.html"></iframe></aside>
+    <footer>
+        <h3>Strone wykonał:</h3>
+        <h5>Bartosz Lewandowski, 149719, EN2, L-3,bartosz.lewandowski@student.put.poznan.pl </h5>
+    </footer>
+</body>
+</html>
